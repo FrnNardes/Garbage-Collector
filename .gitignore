@@ -1,0 +1,17 @@
+# Ignora configurações do VSCode
+.vscode/
+
+# Ignora arquivos compilados Java
+*.class
+
+# Ignora diretórios comuns de build
+target/
+bin/git
+
+# Ignora logs e arquivos temporários
+*.log
+*.tmp
+
+# Ignora arquivos do sistema
+.DS_Store
+Thumbs.db
