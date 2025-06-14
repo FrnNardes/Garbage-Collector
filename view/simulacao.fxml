@@ -1,16 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
 
+<!--
+  MemoryVisualizerLarge.fxml
+  Layout ajustado para janela 1000x700.
+  Retângulos 100x100 com cantos levemente arredondados.
+-->
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <Text layoutX="124.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="QUEM LEU É GAY" wrappingWidth="848.63671875">
-         <font>
-            <Font size="96.0" />
-         </font>
-      </Text>
-   </children>
-</AnchorPane>
+<VBox prefHeight="700.0" prefWidth="1000.0" spacing="20.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GCController">
+    <padding>
+        <Insets bottom="30" left="30" right="30" top="30" />
+    </padding>
+
+    <children>
+        <!-- Grid de blocos (5x4) -->
+        <FlowPane fx:id="memoryGrid" alignment="TOP_CENTER" hgap="10.0" prefHeight="656.0" prefWidth="961.0" vgap="10.0">
+            <children>
+            <Rectangle fx:id="cell0" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" stroke="DARKGRAY" width="100.0" />
+            <Rectangle fx:id="cell1" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" stroke="DARKGRAY" width="100.0" />
+            <Rectangle fx:id="cell2" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" stroke="DARKGRAY" width="100.0" />
+            <Rectangle fx:id="cell4" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" stroke="DARKGRAY" width="100.0" />
+            <Rectangle fx:id="cell5" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" stroke="DARKGRAY" width="100.0" />
+            <Rectangle fx:id="cell6" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" stroke="DARKGRAY" width="100.0" />
+            <Rectangle fx:id="cell7" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" stroke="DARKGRAY" width="100.0" />
+            <Rectangle fx:id="cell8" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" stroke="DARKGRAY" width="100.0" />
+            <Rectangle fx:id="cell9" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" stroke="DARKGRAY" width="100.0" />
+            <Rectangle fx:id="cell10" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" stroke="DARKGRAY" width="100.0" />
+            <Rectangle fx:id="cell11" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" stroke="DARKGRAY" width="100.0" />
+            <Rectangle fx:id="cell12" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" stroke="DARKGRAY" width="100.0" />
+            <Rectangle fx:id="cell13" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" stroke="DARKGRAY" width="100.0" />
+            <Rectangle fx:id="cell14" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" stroke="DARKGRAY" width="100.0" />
+            <Rectangle fx:id="cell15" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" stroke="DARKGRAY" width="100.0" />
+            <Rectangle fx:id="cell16" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" stroke="DARKGRAY" width="100.0" />
+            <Rectangle fx:id="cell17" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" stroke="DARKGRAY" width="100.0" />
+            <Rectangle fx:id="cell18" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" stroke="DARKGRAY" width="100.0" />
+            <Rectangle fx:id="cell19" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" stroke="DARKGRAY" width="100.0" />
+            <Rectangle fx:id="cell191" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" layoutX="235.0" layoutY="235.0" stroke="DARKGRAY" width="100.0" />
+            <Rectangle fx:id="cell1911" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" layoutX="344.0" layoutY="233.0" stroke="DARKGRAY" width="100.0" />
+            <Rectangle fx:id="cell19111" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" layoutX="455.0" layoutY="233.0" stroke="DARKGRAY" width="100.0" />
+            <Rectangle fx:id="cell191111" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" layoutX="566.0" layoutY="233.0" stroke="DARKGRAY" width="100.0" />
+            <Rectangle fx:id="cell1911111" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" layoutX="677.0" layoutY="233.0" stroke="DARKGRAY" width="100.0" />
+            <Rectangle fx:id="cell19111111" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" layoutX="788.0" layoutY="233.0" stroke="DARKGRAY" width="100.0" />
+            <Rectangle fx:id="cell191111111" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" layoutX="11.0" layoutY="344.0" stroke="DARKGRAY" width="100.0" />
+            <Rectangle fx:id="cell1911111111" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" layoutX="122.0" layoutY="344.0" stroke="DARKGRAY" width="100.0" />
+            <Rectangle fx:id="cell19111111111" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" layoutX="233.0" layoutY="344.0" stroke="DARKGRAY" width="100.0" />
+            <Rectangle fx:id="cell191111111111" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" layoutX="344.0" layoutY="344.0" stroke="DARKGRAY" width="100.0" />
+            <Rectangle fx:id="cell1911111111111" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" layoutX="455.0" layoutY="344.0" stroke="DARKGRAY" width="100.0" />
+            <Rectangle fx:id="cell19111111111111" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" layoutX="566.0" layoutY="344.0" stroke="DARKGRAY" width="100.0" />
+            <Rectangle fx:id="cell191111111111111" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" layoutX="677.0" layoutY="344.0" stroke="DARKGRAY" width="100.0" />
+            <Rectangle fx:id="cell1911111111111111" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" layoutX="788.0" layoutY="344.0" stroke="DARKGRAY" width="100.0" />
+            <Rectangle fx:id="cell19111111111111111" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" layoutX="11.0" layoutY="455.0" stroke="DARKGRAY" width="100.0" />
+            <Rectangle fx:id="cell191111111111111111" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" layoutX="122.0" layoutY="455.0" stroke="DARKGRAY" width="100.0" />
+            <Rectangle fx:id="cell1911111111111111111" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" layoutX="233.0" layoutY="455.0" stroke="DARKGRAY" width="100.0" />
+            <Rectangle fx:id="cell19111111111111111111" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" layoutX="344.0" layoutY="455.0" stroke="DARKGRAY" width="100.0" />
+            <Rectangle fx:id="cell191111111111111111111" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" layoutX="455.0" layoutY="455.0" stroke="DARKGRAY" width="100.0" />
+            <Rectangle fx:id="cell1911111111111111111111" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" layoutX="566.0" layoutY="455.0" stroke="DARKGRAY" width="100.0" />
+            <Rectangle fx:id="cell19111111111111111111111" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" layoutX="677.0" layoutY="455.0" stroke="DARKGRAY" width="100.0" />
+            <Rectangle fx:id="cell191111111111111111111111" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" layoutX="788.0" layoutY="455.0" stroke="DARKGRAY" width="100.0" />
+            <Rectangle fx:id="cell1911111111111111111111111" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" layoutX="11.0" layoutY="566.0" stroke="DARKGRAY" width="100.0" />
+            <Rectangle fx:id="cell19111111111111111111111111" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" layoutX="122.0" layoutY="566.0" stroke="DARKGRAY" width="100.0" />
+            <Rectangle fx:id="cell191111111111111111111111111" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" layoutX="233.0" layoutY="566.0" stroke="DARKGRAY" width="100.0" />
+            <Rectangle fx:id="cell1911111111111111111111111111" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" layoutX="344.0" layoutY="566.0" stroke="DARKGRAY" width="100.0" />
+            <Rectangle fx:id="cell19111111111111111111111111111" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" layoutX="455.0" layoutY="566.0" stroke="DARKGRAY" width="100.0" />
+            <Rectangle fx:id="cell191111111111111111111111111111" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" layoutX="566.0" layoutY="566.0" stroke="DARKGRAY" width="100.0" />
+            <Rectangle fx:id="cell1911111111111111111111111111111" arcHeight="10.0" arcWidth="10.0" fill="WHITE" height="100.0" layoutX="677.0" layoutY="566.0" stroke="DARKGRAY" width="100.0" />
+            </children>
+        </FlowPane>
+
+        <!-- Botões de ação -->
+        <HBox alignment="TOP_RIGHT" prefHeight="25.0" prefWidth="1123.0" spacing="11.0">
+            <children>
+                <Button fx:id="gcBtn" onAction="#executarGC" prefHeight="25.0" prefWidth="100.0" text="Executar GC">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></Button>
+                <Button fx:id="allocBtn" onAction="#alocar" prefHeight="25.0" prefWidth="100.0" text="Alocar" />
+                <Button fx:id="derefBtn" onAction="#removerReferencia" prefHeight="25.0" prefWidth="100.0" text="Remover" />
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="100.0" text="Executar Demo" />
+            </children>
+         <VBox.margin>
+            <Insets left="30.0" right="31.0" />
+         </VBox.margin>
+        </HBox>
+    </children>
+</VBox>
